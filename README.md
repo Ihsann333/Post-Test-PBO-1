@@ -1,6 +1,5 @@
 # Post-Test-PBO-1
 <img width="295" height="52" alt="image" src="https://github.com/user-attachments/assets/60ad76fb-f3fb-4b1e-8307-0d01a2b66e10" />
-
 Mengimpor library untuk membuat list dinamis dan membaca input dari user.
 <img width="446" height="40" alt="image" src="https://github.com/user-attachments/assets/2ece2f5b-d98c-4a42-a3de-0c2f2291560c" />
 
