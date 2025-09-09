@@ -1,4 +1,9 @@
 # Post-Test-PBO-1
+# Manajemen Space Coworker
+Program ini merupakan aplikasi sederhana yang digunakan untuk mengelola data ruangan untuk pekerja. Coworker space dimaknai sebagai ruang kerja bersama yang tersedia di dalam suatu perusahaan, tanpa menjelaskan lebih lanjut mengenai perusahaannya.
+
+Program ini membantu admin dalam melakukan pengelolaan data ruangan coworker space agar lebih teratur dan mudah dipantau.
+
 <img width="295" height="52" alt="image" src="https://github.com/user-attachments/assets/60ad76fb-f3fb-4b1e-8307-0d01a2b66e10" />
 
 Mengimpor library untuk membuat list dinamis dan membaca input dari user.
