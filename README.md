@@ -1,101 +1,16 @@
 # Post-Test-PBO-1
 <img width="295" height="52" alt="image" src="https://github.com/user-attachments/assets/60ad76fb-f3fb-4b1e-8307-0d01a2b66e10" />
-ArrayList: untuk menyimpan daftar spacecoworker secara dinamis.
-Scanner: untuk membaca input dari pengguna.
 
-public class Post_tes1 {
-    public static void main(String[] args) {
-        ArrayList<String> spacecoworkerList = new ArrayList<>();
-        Scanner scanner = new Scanner(System.in);
-        int opsi;
+Mengimpor library untuk membuat list dinamis dan membaca input dari user.
+<img width="446" height="40" alt="image" src="https://github.com/user-attachments/assets/2ece2f5b-d98c-4a42-a3de-0c2f2291560c" />
 
-        spacecoworkerList.add("c104");
-        spacecoworkerList.add("c302");
-        spacecoworkerList.add("c303");
-        spacecoworkerList.add("c304");
-        spacecoworkerList.add("c305");
+Membuat kelas utama dengan method main() sebagai titik masuk program.
+<img width="571" height="64" alt="image" src="https://github.com/user-attachments/assets/83285f7a-11f9-4370-8826-e7503396bb76" />
 
-        do {
-            System.out.println("\n=== Sistem Manajemen Coworker Space ===");
-            System.out.println("1. Tambah Space Coworker");
-            System.out.println("2. Lihat Daftar Space Coworker");
-            System.out.println("3. Ubah Data Space Coworker");
-            System.out.println("4. Hapus Space Coworker");
-            System.out.println("5. Keluar");
-            System.out.print("Pilih menu: ");
-            opsi = scanner.nextInt();
-            scanner.nextLine();
+Mendeklarasikan list untuk menyimpan data, objek scanner untuk input, dan variabel opsi untuk menu.
+<img width="314" height="127" alt="image" src="https://github.com/user-attachments/assets/12c2435a-6eaa-406c-80ca-1bda97bcd615" />
 
-            switch (opsi) {
-                case 1:
-                    System.out.print("Masukkan data space coworker: ");
-                    String nama = scanner.nextLine();
-                    spacecoworkerList.add(nama);
-                    System.out.println("Space Coworker berhasil ditambahkan.");
-                    break;
-                    
-                case 2:
-                    if (spacecoworkerList.isEmpty()) {
-                        System.out.println("Tidak ada data space coworker");
-                    } else {
-                        System.out.println("Daftar Space Coworker");
-                        for (int i = 0; i < spacecoworkerList.size(); i++) {
-                        System.out.println((i + 1)+ "."+ spacecoworkerList.get(i));
-                    }
-                    break;
-                    }
-                case 3:
-                    if (spacecoworkerList.isEmpty()) {
-                        System.out.println("Tidak ada data untuk diubah.");
-                    } else {
-                        System.out.println("\n--- Daftar Coworker ---");
-                        for (int i = 0; i < spacecoworkerList.size(); i++) {
-                            System.out.println((i + 1) + ". " + spacecoworkerList.get(i));
-                        }
-                        System.out.print("Pilih nomor space coworker yang ingin diubah: ");
-                        int indexUbah = scanner.nextInt();
-                        scanner.nextLine();
-                        if (indexUbah > 0 && indexUbah <= spacecoworkerList.size()) {
-                            System.out.print("Masukkan nama baru: ");
-                            String namaBaru = scanner.nextLine();
-                            spacecoworkerList.set(indexUbah - 1, namaBaru);
-                            System.out.println("Data berhasil diubah.");
-                        } else {
-                            System.out.println("Nomor tidak valid.");
-                        }
-                    }
-                    break;
-                    
-                case 4:
-                    if (spacecoworkerList.isEmpty()) {
-                        System.out.println("Tidak ada data untuk dihapus.");
-                    } else {
-                        System.out.println("\n--- Daftar Space Coworker ---");
-                        for (int i = 0; i < spacecoworkerList.size(); i++) {
-                            System.out.println((i + 1) + ". " + spacecoworkerList.get(i));
-                        }
-                        System.out.print("Pilih nomor space coworker yang ingin dihapus: ");
-                        int indexHapus = scanner.nextInt();
-                        scanner.nextLine();
-                        if (indexHapus > 0 && indexHapus <= spacecoworkerList.size()) {
-                            spacecoworkerList.remove(indexHapus - 1);
-                            System.out.println("Data berhasil dihapus.");
-                        } else {
-                            System.out.println("Nomor tidak valid.");
-                        }
-                    }
-                    break;
+Mengisi daftar space coworker dengan data awal c104, c302, c303, c304, c305.
+<img width="687" height="226" alt="image" src="https://github.com/user-attachments/assets/a394c507-e023-4878-aa40-3bd894390d84" />
 
-                case 5:
-                    System.out.println("Terima kasih.");
-                    break;
-
-                default:
-                    System.out.println("Pilihan tidak valid.");
-            }
-
-        } while (opsi != 5);
-
-        scanner.close();
-    }
-}
+do-while memastikan menu selalu tampil minimal sekali dan user memilih menu dari 1–5.
