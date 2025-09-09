@@ -1,6 +1,7 @@
 # Post-Test-PBO-1
-import java.util.ArrayList;
-import java.util.Scanner;
+<img width="295" height="52" alt="image" src="https://github.com/user-attachments/assets/60ad76fb-f3fb-4b1e-8307-0d01a2b66e10" />
+ArrayList: untuk menyimpan daftar spacecoworker secara dinamis.
+Scanner: untuk membaca input dari pengguna.
 
 public class Post_tes1 {
     public static void main(String[] args) {
