@@ -2,7 +2,34 @@
 # Manajemen Space Coworker
 Program ini merupakan aplikasi sederhana yang digunakan untuk mengelola data ruangan untuk pekerja. Coworker space dimaknai sebagai ruang kerja bersama yang tersedia di dalam suatu perusahaan, tanpa menjelaskan lebih lanjut mengenai perusahaannya.
 
-Program ini membantu admin dalam melakukan pengelolaan data ruangan coworker space agar lebih teratur dan mudah dipantau.
+Program ini membantu admin dalam melakukan pengelolaan data ruangan coworker space agar lebih teratur dan mudah dipantau. Tujuan program adalah untuk mengelola daftar coworker space, mulai dari menambah, melihat, mengubah, hingga menghapus data. 
+
+## Alur Program
+1. **Tampilan Menu Utama**  
+   User diberikan 5 pilihan menu: Tambah, Lihat, Ubah, Hapus, atau Keluar.  
+   Input diproses menggunakan `switch-case`.
+
+2. **Tambah Data (Create)**  
+   - User memasukkan kode ruang coworker.  
+   - Data disimpan ke dalam `ArrayList<String>`.  
+
+3. **Lihat Data (Read)**  
+   - Jika daftar kosong → tampil pesan *"Tidak ada data space coworker"*.  
+   - Jika ada → tampil semua data dengan nomor urut.  
+
+4. **Ubah Data (Update)**  
+   - Program menampilkan daftar coworker.  
+   - User memilih nomor data yang ingin diubah.  
+   - Jika nomor valid → user memasukkan data baru.  
+   - Jika nomor tidak valid → muncul pesan error.  
+
+5. **Hapus Data (Delete)**  
+   - Program menampilkan daftar coworker.  
+   - User memilih nomor data yang ingin dihapus.  
+   - Jika nomor valid → data dihapus.  
+
+6. **Keluar Program**  
+   - Program berhenti saat user memilih menu `5`.  
 
 <img width="295" height="52" alt="image" src="https://github.com/user-attachments/assets/60ad76fb-f3fb-4b1e-8307-0d01a2b66e10" />
 
